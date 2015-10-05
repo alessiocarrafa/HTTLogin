@@ -1,10 +1,3 @@
-<?php
-	
-	require_once( 'setup.php' );
-	require_once( 'php_ext/RedBeanPHP4_3/rb.php' );
-	
-	R::setup( 'mysql:host=' . HOSTNAME . ';dbname=' . SCHEMATA, USERNAME, PASSWORD );
-?>
 <!DOCTYPE html>
 <html lang="en" ng-app="HTTLogin_App">
     <head>
@@ -62,16 +55,3 @@
         </md-container>
     </body>
 </html>
-<?php			
-	/*
-	$user = R::dispense( 'users' );
-
-	$user[ "nome" ]			= "Alessio";
-	$user[ "cognome" ]		= "Carrafa";
-	$user[ "indirizzo" ]	= "Via Aurelia 668";
-
-	$id = R::store( $user );
-
-	echo( "Added with ID " . $id );
-	*/
-?>
